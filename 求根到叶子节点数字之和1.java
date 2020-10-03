@@ -33,8 +33,7 @@
 因此，数字总和 = 495 + 491 + 40 = 1026.
 
 
-/**
- * Definition for a binary tree node.
+/*
  * public class TreeNode {
  *     int val;
  *     TreeNode left;
