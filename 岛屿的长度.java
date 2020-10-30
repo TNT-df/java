@@ -30,13 +30,14 @@ class Solution {
       return perimeter;
     }
     public int dfs(int[][] grid ,int x ,int y,int m,int n){
-        if(x<0||x>=m||y<0||y>=n||grid[x][y]==0){
+		//判断边界和周围是否为水
+        if(x<0||x>=m||y<0||y>=n||grid[x][y]==0){ 
             return 1;
         }
         if(grid[x][y] ==2){
             return 0;
         }
-        grid[x][y]=2;
+        grid[x][y]=2;//标记已经遍历过的岛屿
         int sum=0;
         sum=sum+dfs(grid,x+1,y,m,n)+dfs(grid,x-1,y,m,n)+dfs(grid,x,y-1,m,n)+dfs(grid,x,y+1,m,n);
         return sum;
