@@ -15,7 +15,7 @@
  */
 class Solution {
     public int kthToLast(ListNode head, int k) {
-       if( head == null){
+       if( head == null || k <= 0){
            return 0;
        }
        ListNode fast = head;
@@ -27,6 +27,6 @@ class Solution {
           fast =fast.next;
            slow = slow.next;
         }
-      return slow.val; 
+      return slow.val;
     }
 }
