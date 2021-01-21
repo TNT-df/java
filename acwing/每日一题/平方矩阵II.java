@@ -43,8 +43,6 @@
 3 2 1 2 3
 4 3 2 1 2
 5 4 3 2 1
-
-
 import java.util.*;
 
 public class Main{
